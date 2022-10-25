@@ -1,6 +1,6 @@
-![image](https://user-images.githubusercontent.com/1713032/170317085-4d209b94-6d7b-44d9-b643-1d0c8c45c1b5.png)
+![image](./Assets/Sprites/screen.png)
 
-# Collapse Test Project
+# Collapse Test Project (Tal Rumer)
 
 This project is a simplistic version of a collapse game.
 
