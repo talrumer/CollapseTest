@@ -129,10 +129,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 3
   GridPosition: {x: 0, y: 0}
+  destroyEffect: {fileID: 4047250977183348187, guid: 21e93fdba6f1fbc4d8ef9f423207aa4b, type: 3}
   Sprite: {fileID: 5381300331545654035}
   ShakeStrength: {x: 0.03, y: 0.03, z: 0}
   ShakeVibrato: 50
-  ShakeDuration: 0.4
+  ShakeDuration: 0.2
 --- !u!61 &5736765790641265397
 BoxCollider2D:
   m_ObjectHideFlags: 0

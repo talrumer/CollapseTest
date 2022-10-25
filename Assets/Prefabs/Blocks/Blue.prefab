@@ -129,6 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 1
   GridPosition: {x: 0, y: 0}
+  destroyEffect: {fileID: 443825274486029918, guid: c7a2195242773354fbb9cfe666b9ff53, type: 3}
 --- !u!61 &6284632821564432107
 BoxCollider2D:
   m_ObjectHideFlags: 0
