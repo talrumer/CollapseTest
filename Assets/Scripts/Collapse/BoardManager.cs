@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using Collapse.Blocks;
 using UnityEngine;
+using TMPro;
 using Random = UnityEngine.Random;
 
 namespace Collapse
@@ -30,6 +31,11 @@ namespace Collapse
         [SerializeField]
         private float timeBetweenAppearance = 0.05f;
 
+        [SerializeField]
+        private TextMeshPro bombsExplodedText;
+
+        private int bombsDestroyed = 0;
+
         // Our grid of blocks
         private Block[,] blocks;
 
@@ -46,6 +52,15 @@ namespace Collapse
             // Init arrays
             blocks = new Block[BoardSize.x, BoardSize.y];
             colCounters = new int[BoardSize.x];
+        }
+
+        public void registerDestroy(Block block)
+        {
+            if (block.Type == BlockType.Bomb)
+            {
+                bombsDestroyed++;
+                bombsExplodedText.text = $"<color=#FFA500> {bombsDestroyed.ToString()} </color> bombs exploded!";
+            }
         }
 
         private void Start()

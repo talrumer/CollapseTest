@@ -56,6 +56,7 @@ namespace Collapse.Blocks
 
         public void prettyDestroySelf()
         {
+            BoardManager.Instance.registerDestroy(this);
             if (destroyEffect != null)
             {
                 GameObject boomFX = Instantiate(destroyEffect, transform.position, Quaternion.identity);
