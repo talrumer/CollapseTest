@@ -67,6 +67,7 @@ namespace Collapse
         {
             // Fill board on start
             ScheduleRegenerateBoard(true);
+            bombsExplodedText.text = $"<color=#FFA500> {bombsDestroyed.ToString()} </color> bombs exploded!";
             // Debug.Log("Remove me for bonus points!");
             Debug.Log("Never gonna give you up, never gonna let you down");
         }
